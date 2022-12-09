@@ -8,18 +8,21 @@
  */
 int main(void)
 {
-int d;
-for (d = 0; d < 90; d++)
+int n, i;
+for (n = '0'; n <= '9'; n++)
 {
-for ()
+for (i = '0'; i <= '9'; i++)
 {
-putchar((d / 10) + '0');
-putchar((d % 10) + '0');
-}
-if (d != 89)
+if (n < i)
+{
+putchar(n);
+putchar(i);
+if (n != '8' || (n == '8' && i != '9'))
 {
 putchar(',');
 putchar(' ');
+}
+}
 }
 }
 putchar('\n');
