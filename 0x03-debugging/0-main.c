@@ -1,6 +1,7 @@
 #include "main.h"
 /**
-* main - Test function for positive or negative
+* main - Test if it's a positive or a negative number
+* @i - input
 * Return: 0
 */
 int main(void)
