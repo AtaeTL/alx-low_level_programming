@@ -7,7 +7,7 @@
 int _isupper(int n)
 {
 int isUpper = 0;
-if (d=n >= 'A' && n <= 'Z')
+if (n >= 'A' && n <= 'Z')
 isUpper = 1;
 return (isUpper);
 }
