@@ -1,22 +1,23 @@
 #include "main.h"
+#include <stdio.h>
 /**
-* print_diagonal - a function that draws a diagonal line on the terminal.
-* @n: An input integer
-* Return: Always 0
+* main - print fizz buzz
+* Return: Always 0.
 */
-void print_diagonal(int n)
+int main(void)
 {
-int i = 0, j;
-if (n > 0)
+int n;
+printf("1");
+for (n = 2; n <= 100; n++)
 {
-for (; i < n; i++)
-{
-for (j = 0; j < i; j++)
-_putchar(' ');
-_putchar(92);
-_putchar('\n');
+printf(" ");
+if (n % 3 == 0)
+printf("Fizz");
+if (n % 5 == 0)
+printf("Buzz");
+if (n % 3 != 0 && n % 5 != 0)
+printf("%d", n);
 }
-}
-else
-_putchar('\n');
+printf("\n");
+return (0);
 }
