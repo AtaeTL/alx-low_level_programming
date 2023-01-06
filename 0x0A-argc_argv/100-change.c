@@ -14,7 +14,7 @@ int num, j, result;
 int coins[] = {25, 10, 5, 2, 1};
 if (argc != 2)
 {
-printf("Error\n");		
+printf("Error\n");
 return (1);
 }
 num = atoi(argv[1]);
@@ -30,7 +30,7 @@ while (num >= coins[j])
 {
 result++;
 num -= coins[j];
-}		
+}
 }
 printf("%d\n", result);
 return (0);
