@@ -21,7 +21,7 @@ while (s1[i])
 i++;
 while (s2[j])
 j++;
-ptr = malloc(1 + (sizeof(char) * i) + (sizeof(char) * j));
+ptr = malloc(1+(sizeof(char) * i)+(sizeof(char) * j));
 if (ptr == NULL)
 return (NULL);
 i = 0;
