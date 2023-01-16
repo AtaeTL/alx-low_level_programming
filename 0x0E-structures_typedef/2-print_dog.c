@@ -16,6 +16,6 @@ if (d)
 printf("Name: %s\n", d->name ? d->name : "(nil)");
 /* compiler doesn't let me add condition for the float type */
 printf("Age: %f\n", d->age);
-printf("Owner: %s\n", d->owner ? d->owner : "(nil)");	
+printf("Owner: %s\n", d->owner ? d->owner : "(nil)");
 }
 }
