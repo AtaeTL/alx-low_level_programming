@@ -36,7 +36,7 @@ if (new_dog->name == NULL || new_dog->owner == NULL)
 free(new_dog->name);
 free(new_dog->owner);
 free(new_dog);
-return (NULL);	
+return (NULL);
 }
 /* once I have the memory allocated */
 /* I start copying the variables to the malloc pointer *new_dog */
