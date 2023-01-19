@@ -1,22 +1,23 @@
-#ifndef _VARIADIC_FUNCTIONS_H
-#define _VARIADIC_FUNCTIONS_H
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
+/*
+* File: variadic_functions.h
+* Auth: (cm-amos)Amos Mwongela
+* Desc: Header file containing prototypes for all functions
+* used in the 0x10-variadic_functions directory.
+*/
 #include <stdarg.h>
-#include <stdio.h>
-void printchar(va_list charlist);
-void printinteger(va_list charlist);
-void printfloat(va_list charlist);
-void printstring(va_list charlist);
-typedef struct characters
+/**
+* struct printer - A new struct type defining a printer.
+* @symbol: A symbol representing a data type.
+* @print: A function pointer to a function that prints
+* a data type corresponding to symbol.
+*/
+typedef struct printer
 {
-/* pointer to the arguments passed to the function print_all) */
-char *arguments;
-/* pointer to function print_all that returns nothing */
-/* and receive a list of characters(arguments) */
-/* va_list is a type that iterates arguments */
-/* va_list as type of  variable we're going to name charlist */
-void (*ptrfunc)(va_list);
-} characters;
-int _putchar(char c);
+char *symbol;
+void (*print)(va_list arg);
+} printer_t;
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
