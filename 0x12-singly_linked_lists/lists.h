@@ -2,14 +2,14 @@
 #define LISTS_H
 /*
 * File: lists.h
-* Auth: (cm-amos)Amos Mwongela
+* Auth: (cm-amos)
 * Desc: Header file containing prototypes and definitions for all functions
 * and types written in the 0x11-singly_linked_lists directory.
 */
 #include <stdlib.h>
 /**
 * struct list_s - singly linked list
-* @str: string 
+* @str: string
 * @len: length of the string
 * @next: points to the next node
 * Description: singly linked list node structure
