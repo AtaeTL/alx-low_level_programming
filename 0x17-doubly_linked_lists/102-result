@@ -1,1 +1,12 @@
-906609
+largest_palindrome = 0
+for i in range(999, 99, -1):
+    for j in range(990, 99, -11):
+        product = i * j
+        if product < largest_palindrome:
+            break
+        if str(product) == str(product)[::-1]:
+            largest_palindrome = product
+            break
+
+with open("102-result", "w") as f:
+    f.write(str(largest_palindrome))
